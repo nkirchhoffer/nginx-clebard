@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx
+  name: nginx-3
   namespace: argocd
 spec:
   project: default
   source:
-    path: manifests
+    path: manifests/nginx-3
     repoURL: 'https://github.com/nkirchhoffer/nginx-clebard'
     targetRevision: HEAD
   destination:
